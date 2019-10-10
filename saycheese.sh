@@ -187,7 +187,7 @@ printf "\n"
 printf " [  01  ]   Serveo.net \n"
 printf " [  02  ]   Ngrok \n"
 default_option_server="1"
-read -p $'\n [  +  ] Choose a Port Forwarding option:'option_server
+read -p $' [  +  ] Choose a Port Forwarding option: ' option_server
 option_server="${option_server:-${default_option_server}}"
 if [[ $option_server -eq 1 ]]; then
 
